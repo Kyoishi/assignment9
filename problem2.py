@@ -8,7 +8,7 @@ temperatures = [-32.0, 0.0, 1.0, 10.0, 32.0, 50.3, 88.8, 101.0]
 def converter(x):
     return x * 9/5 + 32
 
-converted = map(converter, temperatures)
+converted = list(map(converter, temperatures))
 print(converted)
 
 # Write another statement using list comprehension
